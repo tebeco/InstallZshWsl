@@ -90,8 +90,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ### change theme of OhMyZsh
 
 https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+
 For example for `agnoster` :
 `vim ~/.zshrc`
 change to `ZSH_THEME="agnoster"`
 
-`source ~/.zshrc`
+```
+curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark --output ~/.dircolors.256dark
+echo eval \`dircolors ~/.dircolors.256dark\`>>~/.zshrc
+source ~/.zshrc
+```
