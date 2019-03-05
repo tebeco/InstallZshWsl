@@ -83,5 +83,15 @@ Or
 sudo zypper update
 sudo zypper install zsh
 sudo zypper install git
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 ```
+
+### change theme of OhMyZsh
+
+https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+For example for `agnoster` :
+`vim ~/.zshrc`
+change to `ZSH_THEME="agnoster"`
+
+`source ~/.zshrc`
