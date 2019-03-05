@@ -100,3 +100,10 @@ curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolor
 echo eval \`dircolors ~/.dircolors.256dark\`>>~/.zshrc
 source ~/.zshrc
 ```
+
+## might have forgot
+https://medium.com/@Andreas_cmj/how-to-setup-a-nice-looking-terminal-with-wsl-in-windows-10-creators-update-2b468ed7c326
+https://medium.com/wearetheledger/oh-my-zsh-made-for-cli-lovers-installation-guide-3131ca5491fb
+https://medium.com/@ssharizal/hyper-js-oh-my-zsh-as-ubuntu-on-windows-wsl-terminal-8bf577cdbd97
+https://www.howtoforge.com/tutorial/how-to-setup-zsh-and-oh-my-zsh-on-linux/
+https://github.com/seebi/dircolors-solarized
