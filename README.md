@@ -1,14 +1,32 @@
-# InstallZshWsl
+# Install Zsh in a WSL
 
-## Install PowerLines fonts
+## Windows Side
 
+### Install Powerhsell
+
+https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6
+
+### Install PowerLines fonts
+
+```
+git clone https://github.com/powerline/fonts
+cd fonts
+.\install.ps1
+```
 
 ## Check presence of WSL in Regedit
-HKCU:\Console\*WSL_NAME*
-If it does not appear,
-* right click on the title of the console host
-* change the font size from exemple from 14 to 12
-* it chose add the WSL in the list `HKCU:\Console`
+
+Checking if the Console is already registred :
+```
+if($(Get-ChildItem "HKCU:\Console\*openSUSE*" | Measure-Object).Count -ge 1) 
+{
+    Write-Host "GOOD ! The console is already registered"
+}
+else
+{
+    Write-Host "WARNING ! The specifed app is not registered in the Registry, please edit, for example the font size, in order to force it to persist in the Registry."
+}
+```
 
 ## Update Font pallette for specific WSL
 
