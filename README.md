@@ -14,7 +14,7 @@ cd fonts
 .\install.ps1
 ```
 
-## Check presence of WSL in Regedit
+### Check presence of WSL in Regedit
 
 Checking if the Console is already registred :
 ```
@@ -28,7 +28,7 @@ else
 }
 ```
 
-## Update Font pallette for specific WSL
+### Update Font pallette for specific WSL
 
 In a powershell :
 
@@ -53,3 +53,35 @@ Get-ChildItem "HKCU:\Console\*openSUSE*" | ForEach-Object {
 }
 ```
 
+## Wsl Side
+
+### Solarized for Vim
+The readme is plained fucked up
+
+```
+cd ~
+curl https://raw.githubusercontent.com/altercation/solarized/master/vim-colors-solarized/colors/solarized.vim --create-dirs --output ~/.vim/colors/solarized.vim
+
+md ~/.vim/config
+touch ~/.vim/config/colors.vim
+echo syntax enable>> ~/.vim/config/colors.vim
+echo set t_Co=256>> ~/.vim/config/colors.vim
+echo set background=dark>> ~/.vim/config/colors.vim
+
+touch ~/.vimrc
+echo source ~/.vim/config/colors.vim>> ~/.vimrc
+set number>> ~/.vimrc
+```
+
+### install Oh My Zsh
+
+Follow instruction here 
+https://github.com/robbyrussell/oh-my-zsh
+
+Or 
+```
+sudo zypper update
+sudo zypper install zsh
+sudo zypper install git
+
+```
